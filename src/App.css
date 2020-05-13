@@ -1,3 +1,14 @@
+/* custom styling */
+
+.pointer:hover {
+  cursor: pointer;
+}
+.flag {
+  width: 50px;
+  max-height: 50px;
+}
+
+/* Basic react styling */
 .App {
   text-align: center;
 }
