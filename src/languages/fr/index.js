@@ -6,6 +6,7 @@ const fr = {
   ...home,
   ...about,
   ...works,
+  ...study_cases,
 };
 
 export default fr;

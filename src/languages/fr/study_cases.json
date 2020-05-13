@@ -1,18 +1,18 @@
 [
   {
-    "clientname": "platon",
-    "title": "Le challenge",
-    "text1": "PLATON a décidé de se lancer à l'époque malgré une crise économique difficile.  ",
-    "text2": "Nous avons été derrière eux pour leur apporter le meilleur du Web et du digital. Nous sommes vraiment la meilleure agence."
+    "study_case.clientname": "platon",
+    "study_case.title": "Le challenge",
+    "study_case.text1": "PLATON a décidé de se lancer à l'époque malgré une crise économique difficile.  ",
+    "study_case.text2": "Nous avons été derrière eux pour leur apporter le meilleur du Web et du digital. Nous sommes vraiment la meilleure agence."
   },
   {
-    "clientname": "solane",
-    "title": "Solane est le premier vendeur de fraises du Poitou-Charentes",
-    "text1": "Et c'est grâce à nous. Dans les moments les meilleurs comme les plus durs, nos campagnes de communication sur la place du marché ont fonctionné."
+    "study_case.clientname": "solane",
+    "study_case.title": "Solane est le premier vendeur de fraises du Poitou-Charentes",
+    "study_case.text1": "Et c'est grâce à nous. Dans les moments les meilleurs comme les plus durs, nos campagnes de communication sur la place du marché ont fonctionné."
   },
   {
-    "clientname": "sedal",
-    "title": "Sedal, l'entreprise qui a commencé tout en bas. Et qui est toujours tout en bas",
-    "text1": "Malgré nos conseils et notre site web créé sur Wix, Sedal reste semble ne pas vouloir décoller. Mais comme un grand homme et une grande femme l'ont dit, \"les derniers seront les premiers\"."
+    "study_case.clientname": "sedal",
+    "study_case.title": "Sedal, l'entreprise qui a commencé tout en bas. Et qui est toujours tout en bas",
+    "study_case.text1": "Malgré nos conseils et notre site web créé sur Wix, Sedal reste semble ne pas vouloir décoller. Mais comme un grand homme et une grande femme l'ont dit, \"les derniers seront les premiers\"."
   }
 ]

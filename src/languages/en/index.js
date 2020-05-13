@@ -6,6 +6,7 @@ const en = {
   ...home,
   ...about,
   ...works,
+  ...study_cases,
 };
 
 export default en;
