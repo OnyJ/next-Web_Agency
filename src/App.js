@@ -21,7 +21,9 @@ const texts = {
 };
 
 function App() {
-  const [language, setLanguage] = useState("fr");
+  const [language, setLanguage] = useState(
+    localStorage.getItem("Agency-language") || "fr"
+  );
 
   return (
     <IntlProvider locale={language} messages={texts[language]}>

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { LanguagesContext } from "../LanguagesContext";
 
@@ -7,7 +7,7 @@ const Navbar = () => {
   const switchLanguage = () =>
     language === "fr" ? setLanguage("en") : setLanguage("fr");
 
-  // useEffect(() => localStorage.setItem("language", language));
+  useEffect(() => localStorage.setItem("Agency-language", language));
 
   return (
     <nav>
