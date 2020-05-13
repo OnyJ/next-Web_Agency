@@ -13,7 +13,7 @@ import { IntlProvider } from "react-intl";
 import textFr from "./languages/fr";
 import textEn from "./languages/en";
 // Context
-import { LanguagesContext } from "./LanguagesContext";
+import { LanguagesContext } from "./contexts/LanguagesContext";
 
 const texts = {
   fr: textFr,

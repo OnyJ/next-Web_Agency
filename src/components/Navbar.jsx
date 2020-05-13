@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { LanguagesContext } from "../LanguagesContext";
+import { LanguagesContext } from "../contexts/LanguagesContext";
 
 const Navbar = () => {
   const { language, setLanguage } = useContext(LanguagesContext);
