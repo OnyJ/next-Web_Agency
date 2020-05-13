@@ -22,13 +22,19 @@ const Navbar = () => {
       <br />
 
       {language === "fr" ? (
-        <a class="pointer" onClick={switchLanguage}>
-          <img class="flag" src={flagFr} alt="French flag" />
-        </a>
+        <img
+          class="flag pointer"
+          onClick={switchLanguage}
+          src={flagFr}
+          alt="French flag"
+        />
       ) : (
-        <a class="pointer" onClick={switchLanguage}>
-          <img class="flag" src={flagEn} alt="English flag" />
-        </a>
+        <img
+          class="flag pointer"
+          onClick={switchLanguage}
+          src={flagEn}
+          alt="English flag"
+        />
       )}
     </nav>
   );
