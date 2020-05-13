@@ -1,5 +1,17 @@
 import React from "react";
+import { FormattedMessage, injectIntl } from "react-intl";
 
-const Works = () => <h1>Works</h1>;
+const Works = () => {
+  return (
+    <>
+      <h3>
+        <FormattedMessage id="works.title" />
+      </h3>
+      <p>
+        <FormattedMessage id="works.text" />
+      </p>
+    </>
+  );
+};
 
-export default Works;
+export default injectIntl(Works);

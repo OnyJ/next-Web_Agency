@@ -1,5 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { injectIntl, FormattedMessage } from "react-intl";
 
-const Home = () => <h1>Home</h1>;
+const Home = ({ intl }) => {
+  // const [title, setTitle] = useState(intl.formatMessage({ id: "home.title" }));
 
-export default Home;
+  return (
+    <>
+      <h3>
+        <FormattedMessage id="home.title" />
+      </h3>
+      <p>
+        <FormattedMessage id="home.text1" />
+      </p>
+      <p>
+        <FormattedMessage id="home.text2" />
+      </p>
+    </>
+  );
+};
+
+export default injectIntl(Home);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, createContext } from "react";
 import "./App.css";
 // Router
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -9,9 +9,11 @@ import Works from "./pages/Works";
 // Components
 import Navbar from "./components/Navbar";
 // Language
-import { intlProvider } from "react-intl";
+import { IntlProvider } from "react-intl";
 import textFr from "./languages/fr";
 import textEn from "./languages/en";
+// Context
+import { LanguagesContext } from "./LanguagesContext";
 
 const texts = {
   fr: textFr,
@@ -22,20 +24,24 @@ function App() {
   const [language, setLanguage] = useState("fr");
 
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/works">
-          <Works />
-        </Route>
-      </Switch>
-    </Router>
+    <IntlProvider locale={language} messages={texts[language]}>
+      <Router>
+        <LanguagesContext.Provider value={{ language, setLanguage }}>
+          <Navbar />
+        </LanguagesContext.Provider>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/works">
+            <Works />
+          </Route>
+        </Switch>
+      </Router>
+    </IntlProvider>
   );
 }
 
