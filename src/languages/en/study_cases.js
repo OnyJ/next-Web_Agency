@@ -1,0 +1,20 @@
+export default {
+  0: {
+    clientname: "platon",
+    title: "The challenge",
+    text:
+      "PLATON decided to get started at the time despite a difficult economic crisis. We have been behind them to bring them the best of the Web and digital. We are truly the best agency.",
+  },
+  1: {
+    clientname: "solane",
+    title: "Solane is the leading strawberry seller in Poitou-Charentes",
+    text:
+      "And it's thanks to us. In both the best and the hardest times, our marketplace communication campaigns worked.",
+  },
+  2: {
+    clientname: "sedal",
+    title: "Sedal, Started from the bottom. Still on the bottom",
+    text:
+      'Despite our advice and our website created on Wix, Sedal remains does not want to take off. But as a great man and a great woman said, "the last will be the first".',
+  },
+};

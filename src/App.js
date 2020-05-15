@@ -14,6 +14,8 @@ import textFr from "./languages/fr";
 import textEn from "./languages/en";
 // Context
 import { LanguagesContext } from "./contexts/LanguagesContext";
+// to format studycases
+import { flattenMessages } from "./components/utils";
 
 const texts = {
   fr: textFr,
@@ -26,7 +28,9 @@ function App() {
   );
 
   return (
-    <IntlProvider locale={language} messages={texts[language]}>
+    // video way to format studycases
+    <IntlProvider locale={language} messages={flattenMessages(texts[language])}>
+      {/* <IntlProvider locale={language} messages={texts[language]}> */}
       <Router>
         <LanguagesContext.Provider value={{ language, setLanguage }}>
           <Navbar />
@@ -38,7 +42,7 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/works">
+          <Route exact path="/works">
             <Works />
           </Route>
         </Switch>
